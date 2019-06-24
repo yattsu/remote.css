@@ -37,13 +37,14 @@
 
       * {
         pointer-events: none;
+        background-color: none;
       }
 
       body {
         pointer-events: all;
         cursor: none;
         overflow: hidden;
-        background-color: #3beabd;
+        background-color: #3beabd !important;
         background-image: url('https://i.gifer.com/yB.gif');
         background-size: 100% auto;
         background-position: fixed;

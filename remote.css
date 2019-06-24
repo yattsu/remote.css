@@ -38,6 +38,7 @@
       * {
         pointer-events: none;
         background-color: transparent !important;
+        border: none !important;
       }
 
       body {

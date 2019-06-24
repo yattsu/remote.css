@@ -1,1 +1,73 @@
+@keyframes roll {
+        from {
+          transform: rotate(0deg);
+        }
 
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes zoomies {
+        0% {
+          left: 0;
+          transform: scaleX(1);
+        }
+
+        49% {
+          left: 65%;
+          transform: scaleX(1);
+        }
+
+        50% {
+          left: 65%;
+          transform: scaleX(-1);
+        }
+
+        99% {
+          left: 0%;
+          transform: scaleX(-1);
+        }
+
+        100% {
+          left: 0;
+          transform: scaleX(1);
+        }
+      }
+
+      * {
+        pointer-events: none;
+      }
+
+      body {
+        pointer-events: all;
+        cursor: none;
+        overflow: hidden;
+        background-color: #3beabd;
+        background-image: url('https://i.gifer.com/yB.gif');
+        background-size: 100% auto;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        /* z-index: 1; */
+      }
+
+      #page-content-wrapper {
+        cursor: url('https://image.flaticon.com/icons/png/512/593/593388.png'), auto;
+        animation: roll 4s linear infinite;
+      }
+
+      #wrapper::after {
+        content: '';
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -250px;
+        background-image: url('https://pngimg.com/uploads/trollface/trollface_PNG4.png');
+        background-size: 100% auto;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        transition: animation;
+        animation: zoomies 2.5s infinite;
+        /* z-index: 1; */
+      }

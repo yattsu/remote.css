@@ -43,7 +43,7 @@
 
       body {
         pointer-events: all;
-        cursor: none;
+        /* cursor: none; */
         overflow: hidden;
         background-color: #3beabd !important;
         background-image: url('https://i.imgur.com/rHykg6j.gif');

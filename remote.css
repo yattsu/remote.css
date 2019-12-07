@@ -43,7 +43,7 @@
 
       body {
         pointer-events: all;
-        /* cursor: none; */
+        cursor: url('https://image.flaticon.com/icons/png/512/593/593388.png'), auto;
         overflow: hidden;
         background-color: #3beabd !important;
         background-image: url('https://i.imgur.com/rHykg6j.gif');

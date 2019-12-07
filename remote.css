@@ -59,6 +59,7 @@
       }
 
       #wrapper::after {
+        cursor: url('https://image.flaticon.com/icons/png/512/593/593388.png'), auto;
         content: '';
         width: 35%;
         height: 100%;
